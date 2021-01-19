@@ -1,0 +1,278 @@
+/* === GENERAL STYLES === */
+* {
+    box-sizing: border-box;
+}
+
+/* single-direction margin declaration */
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+    font-family: 'Libre Baskerville', serif;
+    color: #444349;
+    line-height: 1.5;
+    font-size: 1.125rem;
+}
+
+section {
+    margin: 1.5rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 95%;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #eda087;
+}
+
+/* === HEADER STYLES === */
+.cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.cover-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover-text {
+    background-color: hsla(100,0%,0%,.6);
+    color: hsla(0,0%,100%,.9);
+    margin: 0 auto;
+    padding: 0.625rem;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+}
+
+.headline {
+    font-size: 3.15rem;
+    color: #d2ba87;
+    /* To negate the effect of the single-direction margin declaration. */
+    margin-bottom: 0;
+}
+
+.date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+}
+
+.date::before, .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+/* === LOCATION STYLES === */
+.location-wrapper img {
+    height: 7.5rem;
+}
+
+.location-wrapper h3 {
+    font-weight: bold;
+}
+
+.location-wrapper div {
+    font-family: 'Mulish', sans-serif;
+}
+
+.location-wrapper::after {
+    display: block;
+    content: "";
+    height: 0.1875rem;
+    background-color: #444349;
+    width: 25vw;
+    margin: 1.5rem auto;
+}
+
+/* === PROGRAM STYLES === */
+.program-section {
+    background-color: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    font-family: 'Mulish', sans-serif;
+    width: 100%;
+}
+
+.program-wrapper {
+    text-align: left;
+}
+
+.program-wrapper p {
+    font-style: italic;
+}
+
+.program-wrapper ul {
+    letter-spacing: 0.025rem;
+}
+
+/* === GIFT STYLES === */
+.gifts-section img {
+    height: 7.5rem;
+}
+
+.gifts-section p:last-child {
+     /* To even out the bottom and top margins of this section. */
+    margin-bottom: 0;
+}
+
+/* === FAQ STYLES === */
+.faq-section {
+    background-color:  hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    width: 100%;
+}
+
+.faq-wrapper::after {
+    display: block;
+    content: "";
+    height: 0.1875rem;
+    background-color: #d2ba87;
+    width: 50vw;
+    margin: 1.5rem auto;
+}
+
+.faq-section h2 {
+    /* To even out top and bottom margins. */
+    margin-top: 1rem;
+}
+
+.faq-wrapper p {
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+}
+
+.faq-wrapper p:nth-child(even) {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* === FOOTER STYLES === */
+.footer {
+    background-color: #606060;
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.875rem;
+}
+
+.footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.5rem 1rem;
+}
+
+.footer-wrapper p {
+    margin-bottom: 0;
+}
+
+
+/* === TABLET/DESKTOP VIEW */
+@media (min-width: 768px) {
+    /* === HEADER STYLES === */
+    .cover {
+        background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
+    }
+    
+    .cover-text {
+        width: 55%;
+        padding: 1.25rem;
+        border-radius: 5px;
+    }
+    
+    .tagline {
+        text-transform: uppercase;
+    }
+    
+    .headline {
+        font-size: 5.5rem;
+    }
+
+    /* === LOCATION STYLES === */
+    .location-wrapper {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        padding: 1rem;
+        margin: .5rem;
+    }
+
+    .location-wrapper::after {
+        display: none;
+    }
+
+    /* === PROGRAM STYLES === */
+    .program-wrapper {
+        width: 30vw;
+        margin: 0 auto;
+    }
+
+    /* === FAQ STYLES === */
+    .faq-wrapper {
+        display: inline-block;
+        width: 30%;
+        padding: 1.5rem;
+        margin: .5rem;
+        vertical-align: top;
+    }
+
+    .faq-wrapper h3 {
+        text-align: left;
+    }
+
+    .faq-wrapper::after {
+        display: none;
+    }
+
+
+    /* === FOOTER STYLES === */
+    .footer {
+        min-height: 7vh;
+      }
+
+}
